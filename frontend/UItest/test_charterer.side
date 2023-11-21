@@ -1,0 +1,703 @@
+{
+  "id": "d1aeb1ff-94ca-4e3f-9c40-7b7bdb24e005",
+  "version": "2.0",
+  "name": "test1",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "db8fdefa-1af1-4e47-93ef-2a0157102ee2",
+    "name": "test_charterer_add",
+    "commands": [{
+      "id": "94e3285c-7662-48ea-8fc7-363807d30d37",
+      "comment": "",
+      "command": "open",
+      "target": "/charterers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab3f1f25-47fd-4501-abe4-50371d61e791",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de6c0da1-1685-4987-9775-9fd8b754f947",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=tr:nth-child(1) ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d70362e7-d74e-48b3-b47e-a373ee00b3f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-fw",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5038ebf7-ac1b-4d9d-bae3-dbd91c9cea52",
+      "comment": "",
+      "command": "click",
+      "target": "css=#charterer-modal .modal-body",
+      "targets": [
+        ["css=#waterarea-modal .modal-body", "css:finder"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d182cbf-ed45-437a-a176-597458fda62e",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-company",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33302c6a-cd13-4be5-8273-1ef0d3129fe9",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-company",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "new charterer"
+    }, {
+      "id": "272a6e9d-c02c-4db5-be71-9047d65d8fa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-nation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1697531e-2e5e-4ea3-b8cb-c0a25adfe850",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-nation",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "new nation"
+    }, {
+      "id": "a0d37197-80a5-40a4-ac35-5277d563e3b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-contact",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "448b0956-143e-4edd-9a60-b9ba47895cee",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-contact",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "+ 111 111 11111"
+    }, {
+      "id": "e1f70556-a629-4835-974e-72a5d55a7873",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15abba9c-4f3c-4728-8a01-1b24debb3a46",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-email",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "new@email.com"
+    }, {
+      "id": "3d877e51-fb3b-413c-ad24-cfc569b26ef7",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ab34441-7a27-43b4-9a78-c9e6fdee050b",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": "new note"
+    }, {
+      "id": "d5397f3a-4c8e-4946-bcdb-46eb809c31b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#charterer-modal .btn-primary",
+      "targets": [
+        ["css=#waterarea-modal .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[27]", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78fc5c79-2c9a-48f2-bf56-4d6fb97a774d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa05dda-c47c-4545-a322-b804c4ecb1bc",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f52a6ea-fb1d-47b9-a344-4a637ed29b9a",
+      "comment": "",
+      "command": "select",
+      "target": "css=.custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "af6d6783-5ce1-4103-b44c-78f415d41b00",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "755aa777-4307-4a72-bbc6-0d5e4bc28c31",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "new charterer"
+    }, {
+      "id": "66fe5181-bb97-454c-bcb2-e001d1988f61",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "new nation"
+    }, {
+      "id": "604fef78-4236-4bc6-bfda-45f209c9de46",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "+111 111 1111"
+    }, {
+      "id": "00e6d90f-28ba-45e4-bc10-75c76c16cf94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(5)",
+      "targets": [],
+      "value": "new@email.com"
+    }, {
+      "id": "50139e65-7799-4db5-a3a7-995a6a9469a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-fw",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47e7f922-97b1-4c4d-abc0-b4b98a81e766",
+      "comment": "",
+      "command": "click",
+      "target": "css=#charterer-modal .modal-header span",
+      "targets": [
+        ["css=#waterarea-modal .modal-header span", "css:finder"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "871d95fd-6f6b-422f-bdf7-81e0f8c69756",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-fw",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "78b2c0f1-cfd8-4d7c-96fa-6e2cdf611db0",
+    "name": "test_charterer_delete",
+    "commands": [{
+      "id": "c03a58fc-30f2-4baa-aae6-4a349aaaaf69",
+      "comment": "",
+      "command": "open",
+      "target": "/charterers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a911d84-f6e6-4ddf-a211-8d112977e0af",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5bf0b5c5-70d1-45d0-951f-089a49ef9777",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=tr:last-child ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "004e66d2-f663-4e90-ac19-a4e413009988",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31466364-ef28-4ebb-bf57-a098596b94ad",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7397ba0a-f728-4200-bcd4-175352aac5dd",
+      "comment": "",
+      "command": "select",
+      "target": "css=.custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "f3cc662b-03ae-4fa1-8f3c-58e42b3be2e7",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "company"
+    }, {
+      "id": "3298d451-a41b-4e19-8d2f-a132fb242db5",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "nation"
+    }, {
+      "id": "a0473b92-2629-4107-a74d-b111614d2f79",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "contact"
+    }, {
+      "id": "d596a16b-39cf-4e6c-8334-625160e79e32",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:last-child td:nth-child(5)",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "b292357e-a752-4291-bc77-2a7ea852353c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:last-child .lnr-trash",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b088b7c-e16e-4f5e-8233-1a74473ca869",
+      "comment": "",
+      "command": "click",
+      "target": "css=#delete-confirm-modal .btn-transition",
+      "targets": [
+        ["css=#waterarea-modal .modal-body", "css:finder"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f04ab34c-8830-4a75-a03f-e4b44d4379eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "627a38c3-6d58-4201-826f-2eb034182a4c",
+      "comment": "",
+      "command": "select",
+      "target": "css=.custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "d78cb491-d1d8-4ae3-87da-f43cd818df38",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "${company}"
+    }, {
+      "id": "c4b2c08f-eeb0-4ecc-a670-a92bae47e01e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "${nation}"
+    }, {
+      "id": "54e13d15-dd57-43c5-8928-c577bb54b6b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "${contact}"
+    }, {
+      "id": "90728639-17c1-4b67-a09d-efb3ba9f8fba",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:last-child td:nth-child(5)",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "32c0503d-d5d8-4cac-a065-1d66c24b685c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:last-child .lnr-trash",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dde6eab-bb31-4787-84e5-f563a6c5801a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#delete-confirm-modal .btn-primary",
+      "targets": [
+        ["css=#waterarea-modal .modal-body", "css:finder"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4c82479-6975-4e0f-93ac-84ec02373b4d",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdfbac5e-e7af-4e72-9a5e-852b9b5c1acd",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "${company}"
+    }, {
+      "id": "b84d90ae-4d71-457b-bc54-1adb5871b2ae",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "${nation}"
+    }, {
+      "id": "16478b96-d14a-408c-b9dd-e85e60573bcc",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "${contact}"
+    }, {
+      "id": "84616e4f-305b-47d5-b382-6ab4f61f5de7",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=tr:last-child td:nth-child(5)",
+      "targets": [],
+      "value": "${email}"
+    }]
+  }, {
+    "id": "6bf0d88a-817a-45ed-8df1-0c9f868365a8",
+    "name": "test_charterer_edit",
+    "commands": [{
+      "id": "a5556106-c6f4-46e3-8f04-f6e389ffadea",
+      "comment": "",
+      "command": "open",
+      "target": "/charterers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45e14418-ad60-4da7-9637-e209bf7ebec5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "098310f7-4ed5-4d06-9544-dbb38336f797",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=tr:last-child ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "5367a8ed-9141-46ff-a93d-6b214cc85241",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "company"
+    }, {
+      "id": "e9b99ae0-98fe-4cda-b721-4a7977db8406",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) td:nth-child(3)",
+      "targets": [],
+      "value": "nation"
+    }, {
+      "id": "106131b1-bf7a-4cdb-a0bc-51819836c19c",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) td:nth-child(4)",
+      "targets": [],
+      "value": "contact"
+    }, {
+      "id": "23ead5d6-1f5c-476e-8e0c-930125a08154",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(1) td:nth-child(5)",
+      "targets": [],
+      "value": "email"
+    }, {
+      "id": "f83d7557-3e54-4b75-b8d2-8b87d568f91c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .lnr-pencil",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3867668e-cd25-42f6-914e-a2b8a040d05c",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=charterer-modal-company",
+      "targets": [],
+      "value": "${company}"
+    }, {
+      "id": "4a6defcc-762a-4df5-bf4e-3d38ba4f8491",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=charterer-modal-nation",
+      "targets": [],
+      "value": "${nation}"
+    }, {
+      "id": "2f9ca01b-9060-45a0-8609-a164f6340421",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=charterer-modal-contact",
+      "targets": [],
+      "value": "${contact}"
+    }, {
+      "id": "13361964-1932-4f51-a687-89be4c633cc9",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=charterer-modal-email",
+      "targets": [],
+      "value": "${email}"
+    }, {
+      "id": "d2028aaf-fc87-4a6d-8a0f-04f34e522e61",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-company",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aafd849c-60fe-420d-b686-ae55ec782b8e",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-company",
+      "targets": [],
+      "value": "${company} added company"
+    }, {
+      "id": "7b50a314-9826-4862-ab75-98470e335d81",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=charterer-modal-company",
+      "targets": [],
+      "value": "new_company"
+    }, {
+      "id": "b49552ea-0f76-4632-addd-c76cbf478f0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-nation",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ba52d31-0075-405d-a892-45981abb193b",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-nation",
+      "targets": [],
+      "value": "${nation} added nation"
+    }, {
+      "id": "2d6e3df3-a9fa-461f-ab12-7a93b214c608",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=charterer-modal-nation",
+      "targets": [],
+      "value": "new_nation"
+    }, {
+      "id": "ac7c9dd8-0cb5-4490-aab7-af390c5d7f0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-contact",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe828422-f99a-4a88-a1bf-037f8cf0a1b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-contact",
+      "targets": [],
+      "value": "${contact} +9990"
+    }, {
+      "id": "c184d9d9-be68-4286-bdfa-8a968d60163f",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=charterer-modal-contact",
+      "targets": [],
+      "value": "new_contact"
+    }, {
+      "id": "679e5412-34c0-4b86-8109-5cbb96da3f7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=charterer-modal-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc1ffd9c-5a30-4b08-b58b-816a9201197b",
+      "comment": "",
+      "command": "type",
+      "target": "id=charterer-modal-email",
+      "targets": [],
+      "value": "${email}.added.com"
+    }, {
+      "id": "24bfbcee-71ac-492e-9e7d-ab4a8b316ed3",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=charterer-modal-email",
+      "targets": [],
+      "value": "new_email"
+    }, {
+      "id": "c86d59e9-3f22-4acb-a807-5aa22a08c01a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#charterer-modal .btn-primary",
+      "targets": [
+        ["css=#waterarea-modal .modal-body", "css:finder"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13681d92-b522-49f9-a19a-b14b0e1da7a2",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bcf3964-3b6b-4d9b-bbd4-8ce04916af8a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "${new_company}"
+    }, {
+      "id": "1516843a-fb0a-4337-993c-20627702c6da",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) td:nth-child(3)",
+      "targets": [],
+      "value": "${new_nation}"
+    }, {
+      "id": "f6f41d93-a02e-4c35-8e9e-d3b9cf62b79c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) td:nth-child(4)",
+      "targets": [],
+      "value": "${new_contact}"
+    }, {
+      "id": "34db11eb-8647-4709-b2fa-0621d4ee9bea",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(1) td:nth-child(5)",
+      "targets": [],
+      "value": "${new_email}"
+    }]
+  }],
+  "suites": [{
+    "id": "d3975170-421a-44ea-a928-099ad7a6d619",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db8fdefa-1af1-4e47-93ef-2a0157102ee2", "78b2c0f1-cfd8-4d7c-96fa-6e2cdf611db0", "6bf0d88a-817a-45ed-8df1-0c9f868365a8"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

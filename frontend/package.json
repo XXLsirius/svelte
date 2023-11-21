@@ -1,0 +1,44 @@
+{
+  "name": "som-svelte",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+    "test:ui": "mocha ./test/test.cjs",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^2.0.0",
+    "@sveltejs/adapter-node": "^1.3.1",
+    "@sveltejs/adapter-static": "^2.0.3",
+    "@sveltejs/kit": "^1.20.4",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/svelte": "^4.0.5",
+    "jsdom": "^22.1.0",
+    "selenium-side-runner": "^4.0.0-alpha.59",
+    "svelte": "^4.0.5",
+    "svelte-check": "^3.4.3",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.2",
+    "vitest": "^0.34.6"
+  },
+  "type": "module",
+  "dependencies": {
+    "@elastic/apm-rum": "^5.15.0",
+    "@smui/linear-progress": "^7.0.0-beta.15",
+    "datatables.net-bs4": "^1.13.6",
+    "datatables.net-dt": "^1.13.6",
+    "jquery": "^3.7.1",
+    "mocha": "^10.2.0",
+    "page": "^1.11.6",
+    "svelte-french-toast": "^1.2.0",
+    "svelte-routing": "^2.5.0",
+    "svelte-toast": "^1.0.0",
+    "uuid": "^9.0.1"
+  }
+}

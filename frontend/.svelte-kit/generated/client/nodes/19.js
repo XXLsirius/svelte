@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/mariner/mariner-detail/id=[id]/+page.svelte";

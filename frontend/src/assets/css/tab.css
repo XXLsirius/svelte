@@ -1,0 +1,20 @@
+.line-tab-remove {
+  float: right;
+  margin-top: -15px;
+  margin-right: -10px;
+  margin-left: 10px;
+  opacity: 0;
+}
+
+.nav-item .nav-link:hover .line-tab-remove {
+  display: block;
+  opacity: 1;
+}
+
+.plus-action .area-plus {
+  color: inherit;
+}
+
+.plus-action .area-plus:hover {
+  color: #3f6ad8;
+}

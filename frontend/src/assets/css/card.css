@@ -1,0 +1,21 @@
+.card-title {
+  font-size: 1.5rem;
+}
+
+.card-body a[data-toggle="modal"] {
+  color: inherit;
+}
+
+.card-body a[data-toggle="modal"]:hover {
+  color: #3f6ad8;
+}
+
+.card-body .plus-action a {
+  margin-top: 0.6rem !important;
+}
+
+.certificate-title-card .left-label {
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}

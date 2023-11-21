@@ -1,0 +1,585 @@
+{
+  "id": "d1aeb1ff-94ca-4e3f-9c40-7b7bdb24e005",
+  "version": "2.0",
+  "name": "test1",
+  "url": "http://localhost:5173",
+  "tests": [{
+    "id": "db8fdefa-1af1-4e47-93ef-2a0157102ee2",
+    "name": "test_shipcert_add",
+    "commands": [{
+      "id": "94e3285c-7662-48ea-8fc7-363807d30d37",
+      "comment": "",
+      "command": "open",
+      "target": "/typeofcertificate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab3f1f25-47fd-4501-abe4-50371d61e791",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de6c0da1-1685-4987-9775-9fd8b754f947",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#tab-content-ship tr:nth-child(1) ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d70362e7-d74e-48b3-b47e-a373ee00b3f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship .fa",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d182cbf-ed45-437a-a176-597458fda62e",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-name",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15abba9c-4f3c-4728-8a01-1b24debb3a46",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-name",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "new ship cert"
+    }, {
+      "id": "b045e607-c5cd-4987-a901-6ee4aadb5f27",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-issuing-agency",
+      "targets": [
+        ["id=toc-ship-modal-issuing-agency", "id"],
+        ["css=#toc-ship-modal-issuing-agency", "css:finder"],
+        ["xpath=//input[@id='toc-ship-modal-issuing-agency']", "xpath:attributes"],
+        ["xpath=//div[@id='toc-ship-modal']/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3165e9a-59e2-4407-a94f-5a0ff510f2c0",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-issuing-agency",
+      "targets": [
+        ["id=toc-ship-modal-issuing-agency", "id"],
+        ["css=#toc-ship-modal-issuing-agency", "css:finder"],
+        ["xpath=//input[@id='toc-ship-modal-issuing-agency']", "xpath:attributes"],
+        ["xpath=//div[@id='toc-ship-modal']/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "new issuing agency"
+    }, {
+      "id": "3d877e51-fb3b-413c-ad24-cfc569b26ef7",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ab34441-7a27-43b4-9a78-c9e6fdee050b",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": "new note"
+    }, {
+      "id": "d5397f3a-4c8e-4946-bcdb-46eb809c31b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#toc-ship-modal .btn-primary",
+      "targets": [
+        ["css=#waterarea-modal .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[27]", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78fc5c79-2c9a-48f2-bf56-4d6fb97a774d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f52a6ea-fb1d-47b9-a344-4a637ed29b9a",
+      "comment": "",
+      "command": "select",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "af6d6783-5ce1-4103-b44c-78f415d41b00",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00e6d90f-28ba-45e4-bc10-75c76c16cf94",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "new ship cert"
+    }, {
+      "id": "b1121894-6408-43c1-b7e3-56e0a4dada6c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "new issuing agency"
+    }, {
+      "id": "f28daf24-fa4a-467f-af8f-a659b39404a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "new note"
+    }]
+  }, {
+    "id": "63b0acc4-c7f4-4415-8d4d-8cee0c0699f8",
+    "name": "test_shipcert_edit",
+    "commands": [{
+      "id": "30056322-3423-4c84-9c11-ffa1f07ea65d",
+      "comment": "",
+      "command": "open",
+      "target": "/typeofcertificate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "576b0a80-4f7f-42b7-8f4f-556f0488f82a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c82bac94-f128-43bc-9b83-247ee1ded824",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#tab-content-ship tr:nth-child(1) ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "52f6db34-c4df-4df8-a5c2-d597a814c2dc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "ac48cd83-fb9a-4356-9529-6559056041e1",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(3)",
+      "targets": [],
+      "value": "agency"
+    }, {
+      "id": "b88b2529-c8d9-4ad3-8788-11769ca04b14",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(4)",
+      "targets": [],
+      "value": "note"
+    }, {
+      "id": "780af2fb-7165-4930-ae66-2500e8b98407",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship tr:nth-child(1) .lnr-pencil",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e5f0ce-4f3e-43cf-a779-54fbf5c49389",
+      "comment": "",
+      "command": "click",
+      "target": "css=#toc-ship-modal .close",
+      "targets": [
+        ["css=#toc-ship-modal .close", "css:finder"],
+        ["xpath=(//button[@type='button'])[14]", "xpath:attributes"],
+        ["xpath=//div[@id='toc-ship-modal']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fe8ee65-d930-4c1e-a618-6dcd0ffe63fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship tr:nth-child(1) .lnr-pencil",
+      "targets": [
+        ["css=.fa-fw", "css:finder"],
+        ["xpath=//div[2]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2c23637-03ac-4971-8986-d930790f6e60",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=toc-ship-modal-name",
+      "targets": [],
+      "value": "${name}"
+    }, {
+      "id": "5aaccb2e-014f-46eb-9bc5-6b1c2b2e0c1a",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=toc-ship-modal-issuing-agency",
+      "targets": [],
+      "value": "${agency}"
+    }, {
+      "id": "514c66d7-63fd-4198-b76a-4f7fae2a5f97",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=toc-ship-modal-note",
+      "targets": [],
+      "value": "${note}"
+    }, {
+      "id": "10a8408d-d6da-4fae-ba56-4afb6908c841",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-name",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd1e3620-7586-4e8a-bc60-4755bbb455a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-name",
+      "targets": [
+        ["id=waterarea-modal-name", "id"],
+        ["css=#waterarea-modal-name", "css:finder"],
+        ["xpath=//input[@id='waterarea-modal-name']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${name} added name"
+    }, {
+      "id": "21153f9a-9714-432e-b698-51b7e6b5e64a",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=toc-ship-modal-name",
+      "targets": [],
+      "value": "new_name"
+    }, {
+      "id": "e240fe36-bf65-4c9c-915d-15ac54b20970",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-issuing-agency",
+      "targets": [
+        ["id=toc-ship-modal-issuing-agency", "id"],
+        ["css=#toc-ship-modal-issuing-agency", "css:finder"],
+        ["xpath=//input[@id='toc-ship-modal-issuing-agency']", "xpath:attributes"],
+        ["xpath=//div[@id='toc-ship-modal']/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f5cf2c9-a2cc-4490-9683-1a764d10f45a",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-issuing-agency",
+      "targets": [
+        ["id=toc-ship-modal-issuing-agency", "id"],
+        ["css=#toc-ship-modal-issuing-agency", "css:finder"],
+        ["xpath=//input[@id='toc-ship-modal-issuing-agency']", "xpath:attributes"],
+        ["xpath=//div[@id='toc-ship-modal']/div/div/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "${agency} added agency"
+    }, {
+      "id": "22493c5d-570d-4d63-b29d-d8a7fbb2a5f1",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=toc-ship-modal-name",
+      "targets": [],
+      "value": "new_agency"
+    }, {
+      "id": "2490498d-9a44-4ee5-b140-8086c8768ddc",
+      "comment": "",
+      "command": "click",
+      "target": "id=toc-ship-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b2f5348-7938-4457-83c9-d8a36bc531fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=toc-ship-modal-note",
+      "targets": [
+        ["id=waterarea-modal-note", "id"],
+        ["css=#waterarea-modal-note", "css:finder"],
+        ["xpath=//textarea[@id='waterarea-modal-note']", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[2]/div[2]/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/textarea", "xpath:position"]
+      ],
+      "value": "${note} added note"
+    }, {
+      "id": "48574a36-11cc-4115-bae3-9441ff5685a1",
+      "comment": "",
+      "command": "storeValue",
+      "target": "id=toc-ship-modal-name",
+      "targets": [],
+      "value": "new_note"
+    }, {
+      "id": "1bbd9ce5-5704-4ef5-be0a-f54b11f7adc7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#toc-ship-modal .btn-primary",
+      "targets": [
+        ["css=#waterarea-modal .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[27]", "xpath:attributes"],
+        ["xpath=//div[@id='waterarea-modal']/div/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca0f07d4-2e49-446d-9c2e-0583cedee3cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db36d2a7-ffa2-4e62-bece-392692324ae8",
+      "comment": "",
+      "command": "select",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "1e0bf630-2ba7-47ee-a9d8-5205e8041bc1",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eed2cbc5-454a-430b-9c86-789aa2bd81c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "${new_name}"
+    }, {
+      "id": "23676d41-7da3-4e1e-a991-3c53829378f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "${new_agency}"
+    }, {
+      "id": "968d6fe2-7f0f-4a78-a649-be876688390e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:nth-child(1) td:nth-child(2)",
+      "targets": [],
+      "value": "${new_note}"
+    }]
+  }, {
+    "id": "1bfe2956-832a-4ecb-a7a8-e880aeb72650",
+    "name": "test_shipcert_delete",
+    "commands": [{
+      "id": "2a24d3cb-ab6b-49ab-85ac-5ebaa82ad910",
+      "comment": "",
+      "command": "open",
+      "target": "/typeofcertificate",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1bbdaee-15d2-447f-a9f0-871d3371cb20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6e17c81-b6fb-4bd0-bec0-be8d5c5a720a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=#tab-content-ship tr:nth-child(1) ",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "4a7fcc1d-bfdf-4ccf-b133-80a9b7bff96c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [
+        ["css=.custom-select", "css:finder"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8064957f-bdc4-4a2b-bbfc-3571537d4a21",
+      "comment": "",
+      "command": "select",
+      "target": "css=#tab-content-ship .custom-select",
+      "targets": [],
+      "value": "label=100"
+    }, {
+      "id": "af37689b-ef20-4a7e-b2e6-8dd86aeb4225",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "name"
+    }, {
+      "id": "915afb1c-de35-4dff-89d0-6a6872f6c30e",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "agency"
+    }, {
+      "id": "b2fa76aa-1ee8-4a4c-ab15-0bbea1b44091",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "note"
+    }, {
+      "id": "a11caba5-3d5b-43e0-ad7b-da7e4b00216d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship tr:last-child .lnr-trash",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "333a9654-ab01-41c1-9480-36b1ca71dd21",
+      "comment": "",
+      "command": "click",
+      "target": "css=#delete-confirm-modal .btn-transition",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6a700fb-34ae-4346-980f-903204a9c1bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "${name}"
+    }, {
+      "id": "ec48a771-348a-43e6-8338-a3a7a6960001",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "${agency}"
+    }, {
+      "id": "4058332a-ff46-4280-864f-f99a04eb9449",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "${note}"
+    }, {
+      "id": "f2bca6c1-89ae-4b99-a89b-c769145420ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab-content-ship tr:last-child .lnr-trash",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5de54d22-6d5c-4481-9e1e-16873ba1a0c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#delete-confirm-modal .btn-primary",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2fea167-ce50-4e21-95bc-94d31818f862",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2d44a46d-129b-4b70-81dd-28ed70a4a324",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(2)",
+      "targets": [],
+      "value": "${name}"
+    }, {
+      "id": "da2973dc-5db5-4d20-8dd9-0b21a5cba078",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(3)",
+      "targets": [],
+      "value": "${agency}"
+    }, {
+      "id": "818cceb1-9819-42cc-88cb-391c2f4999d6",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=#tab-content-ship tr:last-child td:nth-child(4)",
+      "targets": [],
+      "value": "${note}"
+    }]
+  }],
+  "suites": [{
+    "id": "d3975170-421a-44ea-a928-099ad7a6d619",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["db8fdefa-1af1-4e47-93ef-2a0157102ee2", "1bfe2956-832a-4ecb-a7a8-e880aeb72650", "63b0acc4-c7f4-4415-8d4d-8cee0c0699f8"]
+  }],
+  "urls": ["http://localhost:5173/"],
+  "plugins": []
+}

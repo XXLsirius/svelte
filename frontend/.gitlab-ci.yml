@@ -1,0 +1,31 @@
+stages:
+  - Install
+  - Build
+  # - Run
+
+variables:
+  MAJOR_VERSION: "1"
+  MINOR_VERSION: "0"
+  BUILD_VERSION: ${CI_PIPELINE_ID}
+  NEW_TAG: $MAJOR_VERSION.$MINOR_VERSION.$BUILD_VERSION
+
+Install-Job:
+  stage: Install
+  script:
+    - npm install
+
+Build-Job:
+  stage: Build
+  script:
+    - docker build -t som-svelte:$NEW_TAG .
+    # - kind load docker-image som-svelte:$NEW_TAG --nodes kind-worker
+    # - docker rmi som-svelte:$NEW_TAG
+    # - kubectl set image deployment.v1.apps/som-svelte-deployment som-svelte=som-svelte:$NEW_TAG
+# Run-Job:
+#   stage: Run
+#   script:
+#     - lsof -i :5173 && kill $(lsof -t -i :5173)
+#     - nohup npm run dev -- --host 192.168.30.129 > server.log 2>&1 &
+#   needs:
+#     - job: Install-Job
+#       artifacts: true

@@ -1,0 +1,33 @@
+{
+	"/": [],
+	"/certificates": [],
+	"/certificates/certificate-edit/type=[type]&id=[id]&certificateTypeId=[certificateTypeId]&shipId=[shipId]&personId=[personId]": [],
+	"/charterers": [],
+	"/components": [],
+	"/components/card": [],
+	"/components/carousel": [],
+	"/components/checkbox-and-input": [],
+	"/components/file-attachement": [],
+	"/components/label-group": [],
+	"/components/modal": [],
+	"/components/search-input": [],
+	"/components/select": [],
+	"/components/table": [],
+	"/components/tab": [],
+	"/mariner": [],
+	"/mariner/mariner-create/id=[id]": [],
+	"/mariner/mariner-detail/id=[id]": [],
+	"/shipping": [],
+	"/shipping/shipping-create/id=[id]": [],
+	"/shipping/shipping-detail/id=[id]": [],
+	"/shipping/shipping-history": [],
+	"/ship": [],
+	"/ship/ship-create/id=[id]": [],
+	"/ship/ship-detail/id=[id]": [],
+	"/sign-in": [],
+	"/sign-up": [],
+	"/typeofcertificate": [],
+	"/waterareas": [
+		"src/routes/waterareas/+page.js"
+	]
+}

@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/shipping/shipping-create/id=[id]/+page.svelte";
